@@ -1,0 +1,21 @@
+/*====Mobile: 375px;====*/
+/*====Desktop: 1440px;====*/
+
+
+@media(max-width: 1440px){
+  .container{
+    min-width: 800px;
+
+    .card{
+      background-image:url(/images/bg-pattern-desktop.svg);
+      background-size:contain;
+      background-position: bottom left;
+    }
+  }
+}
+
+@media(max-width:375px){
+  .container{
+    min-width:320px;
+  }
+}

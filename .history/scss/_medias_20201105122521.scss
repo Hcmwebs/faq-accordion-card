@@ -1,0 +1,21 @@
+/*====Mobile: 375px;====*/
+/*====Desktop: 1440px;====*/
+
+
+@media(max-width: 1440px){
+  .container{
+    min-width: 800px;
+
+  }
+}
+
+@media(max-width: 375px){
+  .container{
+    min-width: 320px;
+    background-image: url(/images/bg-pattern-mobile.svg);
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+  }
+}

@@ -1,0 +1,28 @@
+/*====Mobile: 375px;====*/
+/*====Desktop: 1440px;====*/
+
+
+@media(max-width: 1440px){
+  .container{
+    min-width: 800px;
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-image:url(/images/bg-pattern-desktop.svg);
+    background-color: linear-gradient(90deg, $gradientSoftViolet 0%, $gradientSoftBlue 100%);
+
+
+
+  }
+}
+
+@media(max-width: 375px){
+  .container{
+    width: 375px;
+    height: 768px;
+    min-width: 320px;
+    background-image: url(/images/bg-pattern-mobile.svg);
+    background-color: linear-gradient(90deg, $gradientSoftViolet 0%, $gradientSoftBlue 100%);
+
+  }
+}
