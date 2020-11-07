@@ -154,6 +154,18 @@
   transform: rotate(180deg);
 }
 
+/*====Mobile: 375px;====*/
+@media (max-width: 375px) {
+  .container {
+    min-width: 320px;
+  }
+  .container .card {
+    width: 327px;
+    height: 535px;
+    background-size: 230px 230px;
+    background-position: 50px -130px;
+  }
+}
 /*====Desktop: 1440px;====*/
 @media (max-width: 1440px) {
   .container {
@@ -167,6 +179,12 @@
     background-image: url(/images/bg-pattern-desktop.svg);
     background-size: cover;
     background-position: left center;
+  }
+  .container .card__header {
+    width: 472px;
+    height: 358px;
+    top: 50%;
+    left: -40px;
   }
 }
 /*====Mobile: 375px;====*/
