@@ -130,6 +130,10 @@ body {
 .container .card__body--item p {
   font-size: 13px;
   padding: 0 10px;
+  display: none;
+}
+.container .card__body--item p.open {
+  display: inline-block;
 }
 .container .card__body--item--divider {
   width: 100%;
@@ -139,18 +143,10 @@ body {
 .container .attribution {
   font-size: 11px;
   text-align: center;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .container .attribution a {
   color: #3e52a3;
-}
-
-.d-N {
-  display: none;
-}
-
-.d-N.open {
-  display: block;
 }
 
 .rotate {

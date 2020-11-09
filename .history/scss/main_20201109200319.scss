@@ -154,13 +154,11 @@ font-weight: $font-light;
         }
 
         p{
-          font-size: 13px;
-          padding: 0 10px;
           display: none;
 
           &.open {
-            display: inline-block;
-
+            font-size: 13px;
+            padding: 0 10px;
           }
 
 

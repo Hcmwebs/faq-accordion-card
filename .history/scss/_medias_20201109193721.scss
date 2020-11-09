@@ -1,0 +1,45 @@
+
+
+/*====Desktop: 1440px;====*/
+
+@media(min-width:1000px){
+    .container{
+      min-width: 1440px;
+
+
+    .card{
+      width: 900px;
+      height: 510px;
+      margin: 0;
+      flex-direction: $row;
+      background:#fff url(/images/bg-pattern-desktop.svg) no-repeat;
+      background-size:contain;
+      background-position: -200px 20px;
+
+
+      &__header{
+
+        width: 472px;
+        height: 358px;
+        transform: translateX(-130px);
+
+      }
+
+      &__body{
+        width: 428px;
+        transform: translateX(-65px);
+
+        &--item{
+
+        width:350px;
+
+          &--title{
+            width: 350px;
+          }
+        }
+
+      }
+    }
+
+  }
+}

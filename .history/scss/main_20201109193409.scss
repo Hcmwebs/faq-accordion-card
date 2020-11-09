@@ -157,15 +157,7 @@ font-weight: $font-light;
           font-size: 13px;
           padding: 0 10px;
           display: none;
-
-          &.open {
-            display: inline-block;
-
-          }
-
-
         }
-
 
         &--divider{
           width: 100%;
@@ -183,7 +175,7 @@ font-weight: $font-light;
   .attribution {
     font-size: 11px;
     text-align: center;
-    margin:20px 0;
+    margin:10px 0;
 
 
   }
@@ -194,6 +186,13 @@ font-weight: $font-light;
 }
 
 
+.d-N {
+  display:none;
+}
+
+.d-N.open{
+display: block;
+}
 
 .rotate{
   transform: rotate(180deg);

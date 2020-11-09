@@ -154,15 +154,7 @@ font-weight: $font-light;
         }
 
         p{
-          font-size: 13px;
-          padding: 0 10px;
           display: none;
-
-          &.open {
-            display: inline-block;
-
-          }
-
 
         }
 
@@ -194,6 +186,12 @@ font-weight: $font-light;
 }
 
 
+
+.open {
+  display: block;
+  font-size: 13px;
+  padding: 0 10px;
+}
 
 .rotate{
   transform: rotate(180deg);
