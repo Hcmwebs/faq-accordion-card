@@ -22,14 +22,15 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 10px;
   font-weight: 400;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .container {
-  max-width: 1440px;
   width: 100%;
+  max-width: 1440px;
   height: 100vh;
   background: linear-gradient(90deg, #af67e9 0%, #6565e7 100%);
   display: flex;
@@ -39,17 +40,16 @@ body {
 }
 .container .card {
   width: 327px;
-  height: 535px;
   background: #fff url(/images/bg-pattern-mobile.svg) no-repeat top center;
   background-size: 230px, 230px;
   border-radius: 23px;
   margin-top: 100px;
+  margin-bottom: 50px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 .container .card__header {
   width: 237px;
@@ -86,11 +86,15 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5px;
+  border-radius: 23px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 .container .card__body--item:hover {
   box-shadow: 0 2px 20px #787887;
+}
+.container .card__body--item:hover h2 {
+  color: #f47c57;
 }
 .container .card__body--item--title {
   width: 279px;
@@ -104,9 +108,6 @@ body {
   font-size: 13px;
   font-weight: 400;
   transition: all 0.5s ease-in-out;
-}
-.container .card__body--item--title h2:hover {
-  color: #f47c57;
 }
 .container .card__body--item--title button {
   margin-left: 20px;
@@ -133,7 +134,7 @@ body {
 .container .card__body--item--divider {
   width: 100%;
   height: 1px;
-  background-color: #e7e7e9;
+  background-color: transparent;
 }
 .container .attribution {
   font-size: 11px;
@@ -148,15 +149,42 @@ body {
   display: none;
 }
 
+.d-N.open {
+  display: block;
+}
+
 .rotate {
   transform: rotate(180deg);
 }
 
 /*====Desktop: 1440px;====*/
-@medias (min-width:1000px) {
-  .card {
+@media (min-width: 1000px) {
+  .container {
+    min-width: 1440px;
+  }
+  .container .card {
     width: 900px;
     height: 510px;
+    margin: 0;
+    flex-direction: row;
+    background: #fff url(/images/bg-pattern-desktop.svg) no-repeat;
+    background-size: contain;
+    background-position: -200px 20px;
+  }
+  .container .card__header {
+    width: 472px;
+    height: 358px;
+    transform: translateX(-130px);
+  }
+  .container .card__body {
+    width: 428px;
+    transform: translateX(-65px);
+  }
+  .container .card__body--item {
+    width: 350px;
+  }
+  .container .card__body--item--title {
+    width: 350px;
   }
 }
 

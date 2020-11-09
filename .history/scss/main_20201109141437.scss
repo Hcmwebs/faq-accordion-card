@@ -61,7 +61,7 @@ font-weight: $font-light;
     background:#fff url(/images/bg-pattern-mobile.svg) no-repeat top center;
     background-size:230px,230px;
     border-radius:23px;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 50px;
     padding: 10px;
     @include flex($column,$center,$center);
@@ -114,10 +114,6 @@ font-weight: $font-light;
 
           box-shadow: 0 2px 20px $darkGrayishBlue;
         }
-        &:hover h2 {
-          color: $softRed;
-        }
-
 
 
         &--title{
@@ -129,6 +125,10 @@ font-weight: $font-light;
             font-size: 13px;
             font-weight: $font-light;
             transition: all 0.5s ease-in-out;
+
+            &:hover{
+              color:$softRed;
+            }
           }
 
           button{

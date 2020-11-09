@@ -1,0 +1,31 @@
+
+
+/*====Desktop: 1440px;====*/
+
+@media(min-width:1000px){
+    .container{
+      min-width: 1440px;
+
+
+    .card{
+      width: 900px;
+      height: 510px;
+      flex-direction: $row;
+
+      &__header{
+
+        width: 472px;
+        height: 358px;
+        transform: translateY(0);
+
+      }
+
+      &__body{
+
+        transform: translateY(0);
+
+      }
+    }
+
+  }
+}

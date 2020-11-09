@@ -116,6 +116,7 @@ font-weight: $font-light;
         }
         &:hover h2 {
           color: $softRed;
+          box-shadow: 0 2px 20px $darkGrayishBlue;
         }
 
 
@@ -129,6 +130,10 @@ font-weight: $font-light;
             font-size: 13px;
             font-weight: $font-light;
             transition: all 0.5s ease-in-out;
+
+            &:hover{
+              color:$softRed;
+            }
           }
 
           button{

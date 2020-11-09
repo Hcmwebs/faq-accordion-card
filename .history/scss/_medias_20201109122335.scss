@@ -14,7 +14,6 @@
       flex-direction: $row;
       background:#fff url(/images/bg-pattern-desktop.svg) no-repeat;
       background-size:contain;
-      background-position: -200px 20px;
 
 
       &__header{
@@ -27,16 +26,7 @@
 
       &__body{
         width: 428px;
-        transform: translateX(-65px);
-
-        &--item{
-
-        width:350px;
-
-          &--title{
-            width: 350px;
-          }
-        }
+        transform: translateY(0);
 
       }
     }

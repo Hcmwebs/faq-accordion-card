@@ -45,11 +45,10 @@ body{
 font-family:$font-stack;
 font-size: $font-size;
 font-weight: $font-light;
-@include flex($column, $center, $center);
+@include grid($center, $center);
 }
 
 .container{
-  width: 100%;
   max-width: 1440px;
   height: 100vh;
   background: linear-gradient(90deg,$gradientSoftViolet 0%,$gradientSoftBlue 100%);
@@ -57,15 +56,14 @@ font-weight: $font-light;
 
   .card{
     width: 327px;
-    // height:735px;
+    height:535px;
     background:#fff url(/images/bg-pattern-mobile.svg) no-repeat top center;
     background-size:230px,230px;
     border-radius:23px;
     margin-top: 100px;
-    margin-bottom: 50px;
     padding: 10px;
     @include flex($column,$center,$center);
-
+    position: relative;
 
 
     &__header{
@@ -106,7 +104,6 @@ font-weight: $font-light;
         padding: 10px;
         @include grid($center,$center);
         gap: 5px;
-        border-radius: 23px;
         cursor: pointer;
         transition: all 0.5s ease-in-out;
 
@@ -114,10 +111,6 @@ font-weight: $font-light;
 
           box-shadow: 0 2px 20px $darkGrayishBlue;
         }
-        &:hover h2 {
-          color: $softRed;
-        }
-
 
 
         &--title{
@@ -129,6 +122,10 @@ font-weight: $font-light;
             font-size: 13px;
             font-weight: $font-light;
             transition: all 0.5s ease-in-out;
+
+            &:hover{
+              color:$softRed;
+            }
           }
 
           button{
@@ -161,9 +158,7 @@ font-weight: $font-light;
         &--divider{
           width: 100%;
           height: 1px;
-          // background-color:$dividersLightGrayishBlue;
-          background-color:transparent;
-
+          background-color:$dividersLightGrayishBlue;
         }
       }
 
@@ -184,13 +179,8 @@ font-weight: $font-light;
   }
 }
 
-
 .d-N {
   display:none;
-}
-
-.d-N.open{
-display: block;
 }
 
 .rotate{

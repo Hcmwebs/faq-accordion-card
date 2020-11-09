@@ -1,0 +1,64 @@
+
+
+/*====Desktop: 1440px;====*/
+
+@media(max-width: 1440px){
+  .container{
+    min-width: 800px;
+
+    .card{
+      width:900px ;
+      height: 510px;
+      margin-top: 0;
+      flex-direction: $row;
+      background-image:url(/images/bg-pattern-desktop.svg);
+      background-size:cover;
+      background-position: left center;
+
+      &__header{
+        width: 472px;
+        height: 358px;
+        left: 0;
+      }
+
+      &__body{
+
+      }
+    }
+  }
+}
+
+
+/*====Mobile: 375px;====*/
+
+@media(max-width:375px) {
+  .container {
+   min-width: 320px;
+
+    .card{
+      width: 327px;
+      height: 535px;
+      background-size: 230px 230px;
+      background-position:50px -130px;
+
+    &__header{
+        width: 237px;
+        height: 180px;
+        position: absolute;
+        top: -40px;
+        transform: translateY(-60px);
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+
+        }
+      }
+
+    }
+
+
+  }
+}
+
