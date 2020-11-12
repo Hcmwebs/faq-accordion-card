@@ -134,9 +134,9 @@ font-weight: $font-light;
           button{
             margin-left: 20px;
             padding: 10px;
+            border: none;
             cursor: pointer;
             background-color: transparent;
-            border: none;
             @include grid($center,$center);
             transition: all 0.75s ease-in-out;
 
@@ -158,12 +158,10 @@ font-weight: $font-light;
           padding: 0 10px;
           display: none;
 
-          &.open {
-            display: inline-block;
+        }
 
-          }
-
-
+        p.open{
+          display: inline-block;
         }
 
 

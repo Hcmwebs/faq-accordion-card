@@ -8,6 +8,8 @@ for(let btn of btns){
   btn.addEventListener('click', () => {
 
     for(let para of paras){
+
+
         if(!open){
               para.classList.add('open');
               btn.classList.add('rotate');
