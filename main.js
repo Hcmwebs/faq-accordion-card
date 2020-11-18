@@ -7,15 +7,17 @@ const btns = document.querySelectorAll('button');
 for(let btn of btns){
   btn.addEventListener('click', () => {
 
-    for(let para of paras){
+    for(let i = 0; i<paras.length; i++){
+
+
 
 
         if(!open){
-              para.classList.add('open');
+              paras[i].classList.add('open');
               btn.classList.add('rotate');
               open = true;
             }else{
-              para.classList.remove('open');
+              paras[i].classList.remove('open');
               btn.classList.remove('rotate');
               open = false;
 
